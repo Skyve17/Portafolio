@@ -18,12 +18,11 @@ export default function Home() {
       <section id="inicio" className={`${styles.section} ${styles.hero}`}>
         <div className={styles.heroGlow}></div>
         <div className={styles.heroContent}>
-          <h1 className={styles.heroName}>
-            Kevin Valdemar<br />
-            Hidalgo Esquivel
+          <h1 className={`${styles.heroTitle} text-gradient`}>
+            Desarrollo Web & <br/>Arquitectura de Redes
           </h1>
-          <h2 className={`${styles.heroTitle} text-gradient`}>
-            Ingeniero en Sistemas
+          <h2 className={styles.heroName}>
+            por Kevin Valdemar Hidalgo
           </h2>
           <p style={{ maxWidth: '600px', color: 'var(--text-secondary)' }}>
             Especializado en desarrollo de software Full Stack, automatización CI/CD,
@@ -79,7 +78,7 @@ export default function Home() {
         
         <div className={styles.grid}>
           {/* Intranet */}
-          <div className={`${styles.card} glass-panel`}>
+          <a href="https://intranet-sedeco-f492fa3d5268.herokuapp.com/" target="_blank" rel="noopener noreferrer" className={`${styles.card} glass-panel`}>
             <div className={styles.cardIcon}>🏢</div>
             <h3 className={styles.cardTitle}>Intranet SEDECO</h3>
             <p className={styles.cardDesc}>
@@ -90,10 +89,10 @@ export default function Home() {
               <span className={styles.techTag}>Filament</span>
               <span className={styles.techTag}>PHP</span>
             </div>
-          </div>
+          </a>
 
           {/* Hoteles */}
-          <div className={`${styles.card} glass-panel`}>
+          <a href="https://hotel-luna-mia.vercel.app/" target="_blank" rel="noopener noreferrer" className={`${styles.card} glass-panel`}>
             <div className={styles.cardIcon}>🏨</div>
             <h3 className={styles.cardTitle}>Sistemas Hoteleros</h3>
             <p className={styles.cardDesc}>
@@ -104,10 +103,10 @@ export default function Home() {
               <span className={styles.techTag}>React</span>
               <span className={styles.techTag}>Vanilla CSS</span>
             </div>
-          </div>
+          </a>
 
           {/* Invitaciones */}
-          <div className={`${styles.card} glass-panel`}>
+          <a href="https://skyvel7.github.io/InvGrettel/" target="_blank" rel="noopener noreferrer" className={`${styles.card} glass-panel`}>
             <div className={styles.cardIcon}>💌</div>
             <h3 className={styles.cardTitle}>Invitaciones Digitales</h3>
             <p className={styles.cardDesc}>
@@ -118,7 +117,7 @@ export default function Home() {
               <span className={styles.techTag}>UX/UI</span>
               <span className={styles.techTag}>Animaciones</span>
             </div>
-          </div>
+          </a>
         </div>
       </section>
 
