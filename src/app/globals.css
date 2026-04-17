@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap');
+
+:root {
+  /* Color Palette - Dark Gamer Aesthetic */
+  --bg-primary: #050510; /* Very deep blue-black */
+  --bg-secondary: #0d0f1a;
+  --bg-card: rgba(20, 24, 40, 0.6);
+  --bg-card-hover: rgba(30, 35, 60, 0.8);
+  
+  --text-primary: #f0f4f8;
+  --text-secondary: #94a3b8;
+  
+  /* Accents */
+  --accent-cyan: #00d2ff;
+  --accent-purple: #9d4edd;
+  --accent-glow: 0 0 20px rgba(0, 210, 255, 0.3);
+  --accent-glow-purple: 0 0 20px rgba(157, 78, 221, 0.3);
+
+  /* Gradients */
+  --gradient-neon: linear-gradient(90deg, var(--accent-purple), var(--accent-cyan));
+  
+  /* Borders */
+  --border-color: rgba(255, 255, 255, 0.05);
+  --border-color-glow: rgba(0, 210, 255, 0.5);
+
+  /* Typography */
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Outfit', sans-serif;
+
+  /* Effects */
+  --glass-blur: blur(12px);
+  --transition-fast: 0.2s ease;
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+/* Base Glassmorphism utilities used across sections */
+.glass-panel {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  transition: all var(--transition-smooth);
+}
+
+.glass-panel:hover {
+  background: var(--bg-card-hover);
+  border-color: rgba(255,255,255,0.1);
+  transform: translateY(-4px);
+  box-shadow: var(--accent-glow);
+}
+
+/* Gradient Text styles */
+.text-gradient {
+  background: var(--gradient-neon);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
