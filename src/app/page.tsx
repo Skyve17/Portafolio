@@ -19,7 +19,7 @@ export default function Home() {
         <div className={styles.heroGlow}></div>
         <div className={styles.heroContent}>
           <h1 className={`${styles.heroTitle} text-gradient`}>
-            Desarrollo Web & <br/>Arquitectura de Redes
+            Desarrollo Web & <br />Arquitectura de Redes
           </h1>
           <h2 className={styles.heroName}>
             por Kevin Valdemar Hidalgo
@@ -38,7 +38,7 @@ export default function Home() {
       {/* Experience Section */}
       <section id="experiencia" className={styles.section}>
         <h2 className={styles.sectionTitle}>Mi <span className="text-gradient">Trayectoria</span></h2>
-        
+
         <div className={styles.timeline}>
           <div className={styles.timelineItem}>
             <div className={styles.timelineDot}></div>
@@ -49,7 +49,7 @@ export default function Home() {
               <li>Creación de Intranet web con sistema de inventarios, utilizando Laravel, PHP, Filament y Livewire.</li>
             </ul>
           </div>
-          
+
           <div className={styles.timelineItem}>
             <div className={styles.timelineDot}></div>
             <h3 className={styles.expRole}>Técnico en Redes MIKROTIK</h3>
@@ -75,14 +75,14 @@ export default function Home() {
       {/* Projects Section */}
       <section id="proyectos" className={styles.section}>
         <h2 className={styles.sectionTitle}>Portafolio de <span className="text-gradient">Proyectos</span></h2>
-        
+
         <div className={styles.grid}>
           {/* Intranet */}
           <a href="https://intranet-sedeco-f492fa3d5268.herokuapp.com/" target="_blank" rel="noopener noreferrer" className={`${styles.card} glass-panel`}>
             <div className={styles.cardIcon}>🏢</div>
             <h3 className={styles.cardTitle}>Intranet SEDECO</h3>
             <p className={styles.cardDesc}>
-              Desarrollo de un sistema de intranet administrativa y gestión de inventarios con panel de control moderno.
+              Desarrollo para el gobierno de michoacan de un sistema de intranet administrativa y gestión de inventarios con panel de control moderno.
             </p>
             <div className={styles.cardTech}>
               <span className={styles.techTag}>Laravel</span>
@@ -124,7 +124,7 @@ export default function Home() {
       {/* Services and Skills Section */}
       <section id="servicios" className={styles.section}>
         <h2 className={styles.sectionTitle}>Servicios y <span className="text-gradient">Habilidades</span></h2>
-        
+
         <div className={styles.grid}>
           <div className={`${styles.card} glass-panel`}>
             <h3 className={styles.cardTitle}>Ingeniería de Software</h3>
@@ -144,7 +144,7 @@ export default function Home() {
       {/* Contact Section */}
       <section id="contacto" className={styles.section} style={{ minHeight: '60vh' }}>
         <h2 className={styles.sectionTitle}>Información de <span className="text-gradient">Contacto</span></h2>
-        
+
         <div className={styles.contactGrid}>
           <div className={`${styles.contactItem} glass-panel`}>
             <div className={styles.contactIcon}>📱</div>
@@ -153,7 +153,7 @@ export default function Home() {
               <p>753 159 1172</p>
             </div>
           </div>
-          
+
           <div className={`${styles.contactItem} glass-panel`}>
             <div className={styles.contactIcon}>✉️</div>
             <div className={styles.contactInfo}>
@@ -161,7 +161,7 @@ export default function Home() {
               <p>skyvel337@gmail.com</p>
             </div>
           </div>
-          
+
           <div className={`${styles.contactItem} glass-panel`} style={{ gridColumn: '1 / -1' }}>
             <div className={styles.contactIcon}>📍</div>
             <div className={styles.contactInfo}>
