@@ -278,3 +278,45 @@
   font-size: 1.1rem;
   font-weight: 600;
 }
+
+/* --- Responsive Layout (Mobile Devices) --- */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.8rem 1rem;
+    justify-content: flex-start;
+    overflow-x: auto;
+    /* Ocultar scrollbar visualmente, permitiendo el arrastre tactil */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+  .navbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navLinks {
+    gap: 1.2rem;
+    align-items: center;
+  }
+
+  .navLinks a {
+    font-size: 0.85rem;
+    white-space: nowrap; /* Evita que el texto de un enlace baje a 2 líneas */
+  }
+
+  .section {
+    padding: 85px 20px 40px;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+  
+  .heroName {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
+  
+  .heroTitle {
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+  }
+}
