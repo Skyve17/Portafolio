@@ -279,6 +279,34 @@
   font-weight: 600;
 }
 
+/* --- Floating WhatsApp Button --- */
+.whatsappBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: all var(--transition-smooth);
+}
+
+.whatsappBtn:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 0 30px rgba(37, 211, 102, 0.8);
+}
+
+.whatsappBtn svg {
+  width: 35px;
+  height: 35px;
+  fill: #fff;
+}
+
 /* --- Responsive Layout (Mobile Devices) --- */
 @media (max-width: 768px) {
   .navbar {
@@ -318,5 +346,17 @@
   
   .heroTitle {
     font-size: clamp(2.2rem, 8vw, 3rem);
+  }
+
+  .whatsappBtn {
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  .whatsappBtn svg {
+    width: 30px;
+    height: 30px;
   }
 }
